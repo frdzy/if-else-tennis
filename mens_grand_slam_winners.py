@@ -5,16 +5,29 @@
 '''
 
 
-# 2009
+# 2010
 def print_winner(tournament, year):
-    if tournament == 'Wimbledon':
+    if year == 2010:
+        ''' This was a dominant year for Nadal, with the exception of the
+            Australian Open when he retired from injuries in the quarterfinals
+            against Murray. Murray would be beaten by Federer in the finals, in
+            effect Soderling-ing Nadal again (though Nadal's naturally abrasive
+            playing style was admittedly also to blame).
+        '''
+        if tournament == 'Australian Open':
+            winner = 'Federer'
+        else
+            winner = 'Nadal'
+    elif tournament == 'Wimbledon':
         if year == 2008:
             ''' Greatest Tennis Match in History '''
             winner = 'Nadal'
-        else:
+        elif year == 2009:
             ''' Nadal couldn't defend his title after withdrawing due to
                 injuries during the first round.
             '''
+            winner = 'Federer'
+        else:
             winner = 'Federer'
     elif tournament == 'French Open':
         if year == 2004:

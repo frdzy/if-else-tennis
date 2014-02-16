@@ -5,7 +5,7 @@
 '''
 
 
-# 2010
+# 2011
 def print_winner(tournament, year):
     if year == 2010:
         ''' This was a dominant year for Nadal, with the exception of the
@@ -18,6 +18,21 @@ def print_winner(tournament, year):
             winner = 'Federer'
         else
             winner = 'Nadal'
+    elif year == 2011:
+        ''' A similarly dominant year for Djokovic. After beating Tsonga in the
+            Wimbledon seminfinals, he ascended to the ATP #1 spot for the first
+            time in his career. However, in the semifinals of the French Open,
+            Djokokvic was beaten by Federer, which was his first loss of the
+            season that ended a 43-match win streak. The finals would go to
+            Nadal, as expected. Djokovic got his revenge against them in the
+            US Open, saving 2 match points on Federer's serve in the semifinals
+            and breaking back to win the decisive fifth set, then went on to
+            beat Nadal in the finals over four sets.
+        '''
+        if tournament == 'French Open':
+            winner = 'Nadal'
+        else:
+            winner = 'Djokovic'
     elif tournament == 'Wimbledon':
         if year == 2008:
             ''' Greatest Tennis Match in History '''

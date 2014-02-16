@@ -5,7 +5,7 @@
 '''
 
 
-# 2011
+# 2012 - 2013
 def print_winner(tournament, year):
     if year == 2010:
         ''' This was a dominant year for Nadal, with the exception of the
@@ -42,6 +42,25 @@ def print_winner(tournament, year):
                 injuries during the first round.
             '''
             winner = 'Federer'
+        elif year == 2012:
+            ''' Federer beat Murray in 4 sets in the finals for a record seven
+                Wimbledon titles (tying Sampras) and returning to the ATP #1
+                spot, which also helped him surpass Sampras's record of 286
+                weeks as the world number 1. However, in August Murray would
+                beat Federer in the 2012 London Olympics, which held its tennis
+                event at Wimbledon -- which meant the gold medal match was
+                played on the very same court where Murray lost to Federer a
+                month ago!
+            '''
+            winner = 'Federer'
+        elif year == 2013:
+            ''' After winning the gold medal in the 2012 Olympics, Murray found
+                the confidence he had been missing. He went on to win the 2012
+                US Open, and then in 2013 beat Djokovic to win the Wimbledon
+                finals and became the first British man to do so since 1936 (as
+                well as the first Scot to do so since 1896).
+            '''
+            winner = 'Murray'
         else:
             winner = 'Federer'
     elif tournament == 'French Open':
@@ -66,8 +85,10 @@ def print_winner(tournament, year):
             winner = 'Djokovic'
         elif year == 2009:
             winner = 'Nadal'
-        else:
+        elif year < 2011:
             winner = 'Federer'
+        else:
+            winner = 'Djokovic'
     elif tournament == 'US Open':
         if year == 2009:
             ''' After Federer handily overcame Djokovic in the semifinals --
@@ -77,6 +98,10 @@ def print_winner(tournament, year):
                 bested Federer in their head-to-head record thus far.
             '''
             winner = 'del Potro'
+        elif year == 2012:
+            winner = 'Murray'
+        elif year == 2013:
+            winner = 'Nadal' # I watched the finals live in New York City!
         else:
             winner = 'Federer'
     else:

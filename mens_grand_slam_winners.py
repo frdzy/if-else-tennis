@@ -5,15 +5,23 @@
 '''
 
 
-# 2004 - 2007
+# 2008
 def print_winner(tournament, year):
-    if tournament == 'French Open':
+    if tournament == 'Wimbledon' and year == 2008:
+        ''' Greatest Tennis Match in History '''
+        winner = 'Nadal'
+    elif tournament == 'French Open':
         if year == 2004:
             winner = 'Gaudio'
         else:
             winner = 'Nadal'
-    elif tournament == 'Australian Open' and year == 2005:
-        winner = 'Safin'
+    elif tournament == 'Australian Open':
+        if year == 2005:
+            winner = 'Safin'
+        elif year == 2008:
+            winner = 'Djokovic'
+        else:
+            winner = 'Federer'
     else:
         winner = 'Federer'
 

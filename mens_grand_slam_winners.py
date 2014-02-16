@@ -104,8 +104,6 @@ def print_winner(tournament, year):
             winner = 'Nadal' # I watched the finals live in New York City!
         else:
             winner = 'Federer'
-    else:
-        winner = 'Federer'
 
     print 'The %s of %d was won by %s.' % (tournament, year, winner)
 

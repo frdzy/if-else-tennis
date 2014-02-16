@@ -16,7 +16,7 @@ def get_winner(tournament, year):
     if tournament == 'French Open':
         if year == 2004:
             return 'Gaudio'
-        elif year == 2009:
+        elif year != 2009:
             ''' The term "Soderlinged" was coined after the man who went up
                 against Nadal in the fourth round and played a phenomenal match
                 to pull off a tremendous upset. Soderling would eventually go on
@@ -25,8 +25,7 @@ def get_winner(tournament, year):
                 well as the only loss for Nadal at the French Open **since his
                 debut in 2005**.
             '''
-            return 'Federer'
-        return 'Nadal'
+            return 'Nadal'
 
     ''' "2010 and 2011 saw Nadal and Djokovic (repectively) being basically
         unstoppable"
@@ -38,9 +37,8 @@ def get_winner(tournament, year):
             effect Soderling-ing Nadal again (though Nadal's naturally abrasive
             playing style was admittedly also to blame).
         '''
-        if tournament == 'Australian Open':
-            return 'Federer'
-        return 'Nadal'
+        if tournament != 'Australian Open':
+            return 'Nadal'
     if year == 2011:
         ''' A similarly dominant year for Djokovic. After beating Tsonga in the
             Wimbledon seminfinals, he ascended to the ATP #1 spot for the first
@@ -85,7 +83,6 @@ def get_winner(tournament, year):
                 well as the first Scot to do so since 1896).
             '''
             return 'Murray'
-        return 'Federer'
 
     ''' "The Australian has been hotly contested, with Federer and Djokovic
         splitting a majority of the titles between the two of them -- with
@@ -98,9 +95,8 @@ def get_winner(tournament, year):
             pass
         elif year == 2009:
             return 'Nadal'
-        elif year < 2011:
-            return 'Federer'
-        return 'Djokovic'
+        elif year >= 2011:
+            return 'Djokovic'
 
     ''' "The US Open was the second best tournament for Federer, though after
         losing to del Potro in 2009 he has yet to win the title again"
@@ -118,8 +114,9 @@ def get_winner(tournament, year):
             return 'Murray'
         elif year == 2013:
             return 'Nadal' # I watched the finals live in New York City!
-        return 'Federer'
 
+    ''' "Roger Federer is the greatest tennis player of all time" '''
+    return 'Federer'
 
 if __name__ == '__main__':
     import sys

@@ -7,7 +7,22 @@
 
 # 2012 - 2013
 def print_winner(tournament, year):
-    if year == 2010:
+    if tournament == 'French Open':
+        if year == 2004:
+            winner = 'Gaudio'
+        elif year == 2009:
+            ''' The term "Soderlinged" was coined after the man who went up
+                against Nadal in the fourth round and played a phenomenal match
+                to pull off a tremendous upset. Soderling would eventually go on
+                to reach the finals, only to lose to Federer. To date, this
+                remains the only year Federer claimed the French Open title, as
+                well as the only loss for Nadal at the French Open **since his
+                debut in 2005**.
+            '''
+            winner = 'Federer'
+        else:
+            winner = 'Nadal'
+    elif year == 2010:
         ''' This was a dominant year for Nadal, with the exception of the
             Australian Open when he retired from injuries in the quarterfinals
             against Murray. Murray would be beaten by Federer in the finals, in
@@ -29,10 +44,7 @@ def print_winner(tournament, year):
             and breaking back to win the decisive fifth set, then went on to
             beat Nadal in the finals over four sets.
         '''
-        if tournament == 'French Open':
-            winner = 'Nadal'
-        else:
-            winner = 'Djokovic'
+        winner = 'Djokovic'
     elif tournament == 'Wimbledon':
         if year == 2008:
             ''' Greatest Tennis Match in History '''
@@ -63,21 +75,6 @@ def print_winner(tournament, year):
             winner = 'Murray'
         else:
             winner = 'Federer'
-    elif tournament == 'French Open':
-        if year == 2004:
-            winner = 'Gaudio'
-        elif year == 2009:
-            ''' The term "Soderlinged" was coined after the man who went up
-                against Nadal in the fourth round and played a phenomenal match
-                to pull off a tremendous upset. Soderling would eventually go on
-                to reach the finals, only to lose to Federer. To date, this
-                remains the only year Federer claimed the French Open title, as
-                well as the only loss for Nadal at the French Open **since his
-                debut in 2005**.
-            '''
-            winner = 'Federer'
-        else:
-            winner = 'Nadal'
     elif tournament == 'Australian Open':
         if year == 2005:
             winner = 'Safin'
